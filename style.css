@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(215, 245, 147, 0.3);
+   
+    row-gap: 0.05%;
+    column-gap: 1%;
+    margin: 0px;
+    padding: 1%;
+}
+
+@media screen and (min-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.searchBar {
+    height: 200px;
+    width: 100vw;
+    background: rgb(206, 9, 173);
+    background: linear-gradient(170deg, rgba(166, 213, 40, 1) 12%, rgba(201, 204, 47, 1) 36%, rgba(190, 226, 49, 1) 62%, rgba(140, 194, 15, 0.9) 89%);
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* //position: sticky;  */
+    top: 0 ;
+    margin-bottom: 3%;
+}
+
+@media screen and (min-width: 900px) {
+    .searchBar {
+        flex-flow: row;
+        height:100px;
+    }
+}
+
+#searchBox {
+    margin: 1%;
+    width: 250px;
+    height: 50px;
+    border-radius: 24px;
+    border: 2px solid rgb(52, 52, 170);
+    padding: 15px;
+    align-self: center;
+    margin-left: 10%;
+    
+}
+
+.siteHeading {
+    font-size: 20px;
+    grid-area: right;
+    justify-self: flex-end;
+    margin-left: 8%;
+    font-family: 'Otomanopee One', sans-serif;
+    color: black;
+}
+@media screen and (min-width: 900px) {
+    .siteHeading {
+       font-size: 40px;
+    }
+}
+
+.eachCatBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    opacity: 0.8;
+    border: lightcyan;
+    color: lightcyan;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #dfa715, #d89f13, #d29711, #cb8f10, #c4870e, #c18b08, #bd9003, #b99400, #b5a600, #acb800, #9eca00, #88dc21);
+   
+}
+
+#searchButton {
+    width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgb(175, 90, 90);
+}
+
+h2 {
+    grid-row: 1;
+    grid-column: 1/3;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 4px solid lightgrey;
+    background-image: -webkit-repeating-linear-gradient();
+    text-transform: uppercase;
+}
+
+h3 { 
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
